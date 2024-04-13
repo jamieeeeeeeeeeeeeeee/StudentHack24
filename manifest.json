@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name" : "Translation",
+    "version" : "",
+    "description": "Translates web pages into different languages.",
+    "icons": {
+        "16": "",
+        "48": "",
+        "128": ""
+    },
+    "action" :{
+        "default_icon": {
+            "16": "",
+            "48": "",
+            "128": ""
+        }
+    },
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["translate.js"]
+    }]
+}
